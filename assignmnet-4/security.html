@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Security Attributes</title>
+</head>
+<body>
+    <form autocomplete="off">
+        <label for="user">UserName:</label>
+        <input type="text" id="user" name="user" required>
+        <br><br>
+
+        <label for="pass">Password</label>
+        <input type="text"  id="name" name="pass" required>    
+        <br>
+        <br>
+        <input type="submit" value="Login">
+     </form>
+
+     <p>
+         Note: Turning off <code>autocomplete</code> helps prevent browsers from storing
+        sensitive data like passwords, improving security.
+    </p>
+     </p>
+
+</body>
+</html>
