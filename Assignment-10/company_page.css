@@ -1,0 +1,18 @@
+.hero-section {
+    background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+    min-height: 70vh;
+    color: white;
+}
+
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-section > .container {
+    position: relative;
+    z-index: 2;
+}
