@@ -1,0 +1,20 @@
+/* Animation Demo CSS */
+/* Moving box, bouncing ball, and color-changing text */
+*{box-sizing:border-box}
+body,html{height:100%;margin:0}
+body{display:flex;align-items:center;justify-content:center;background:#f8fafc;font-family:system-ui}
+.stage{display:flex;gap:2rem;flex-direction:column;align-items:center}
+
+/* moving box */
+.box{width:80px;height:60px;background:#60a5fa;border-radius:8px;animation:slide 4s infinite ease-in-out alternate}
+@keyframes slide{from{transform:translateX(-40px)}to{transform:translateX(40px)}}
+
+/* bouncing ball */
+.ball{width:50px;height:50px;border-radius:50%;background:#f97316;animation:bounce 1.2s infinite cubic-bezier(.28,.84,.42,1);animation-direction:alternate}
+@keyframes bounce{0%{transform:translateY(0)}50%{transform:translateY(-80px)}100%{transform:translateY(0)}}
+
+/* color-changing text */
+.pulse{animation:colorPulse 3s infinite ease-in-out;animation-direction:alternate;animation-iteration-count:infinite}
+@keyframes colorPulse{0%{color:#111}50%{color:#a78bfa}100%{color:#ef4444}}
+
+/* delays and iterations shown above */

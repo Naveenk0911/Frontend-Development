@@ -1,0 +1,18 @@
+/* Tooltip Demo CSS */
+/* Tooltips built with position:absolute and opacity transitions */
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:#f5f7fb}
+.center{text-align:center}
+.row{display:flex;gap:2rem;align-items:center}
+.tooltip-wrap{position:relative;display:inline-block}
+.tooltip-target{font-size:2.4rem;display:inline-block;padding:0.6rem;border-radius:8px;cursor:pointer}
+
+/* tooltip (hidden by default) */
+.tooltip{position:absolute;left:50%;transform:translateX(-50%) translateY(10px);bottom:100%;white-space:nowrap;padding:.5rem .7rem;border-radius:6px;background:#111;color:#fff;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .3s ease-in-out,transform .3s ease-in-out;z-index:10}
+
+/* show on hover/focus-within */
+.tooltip-wrap:hover .tooltip,
+.tooltip-wrap:focus-within .tooltip{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* responsive: stack */
+@media (max-width:540px){.row{flex-direction:column}}

@@ -1,0 +1,15 @@
+/* Box-Sizing Comparison CSS */
+/* Two boxes show the difference between default and border-box */
+body{font-family:Arial;padding:2rem;background:#f9fafb}
+.compare{max-width:1000px;margin:0 auto}
+.side-by-side{display:flex;gap:2rem;align-items:flex-start}
+.box{width:300px;padding:30px;border:10px solid #111;border-radius:8px}
+.default{background:#fff}
+.border-box{box-sizing:border-box;background:#fff}
+.explain{margin-top:1rem;color:#6b7280}
+
+/* Show difference with pseudo content */
+.default::after{content:'Rendered total width > 340px';display:block;margin-top:.6rem;color:#ef4444}
+.border-box::after{content:'Rendered total width = 300px';display:block;margin-top:.6rem;color:#10b981}
+
+@media (max-width:700px){.side-by-side{flex-direction:column}}

@@ -1,0 +1,24 @@
+/* Selectors Practice CSS */
+/* Demonstrates element, class, id, attribute selectors and combinators */
+body{font-family:Arial;padding:1.5rem;background:#f7fafc;color:#111}
+header,h1{margin:0 0 1rem}
+.wrap{max-width:900px;margin:0 auto;padding:1rem}
+p{line-height:1.5}
+
+/* Class selector */
+/* .highlight styles text with a soft background */
+.highlight{background:#fffbeb;padding:.4rem;border-radius:6px}
+
+/* ID selector */
+#unique{border-left:4px solid #60a5fa;padding-left:.6rem}
+
+/* Attribute selector */
+a[data-type="special"]{color:#7c3aed;text-decoration:underline}
+
+/* Combinators */
+.comb > .child{font-weight:700;color:#111}
+.comb p + .adj{font-style:italic}
+.comb .later{background:#eef2ff;padding:.2rem .4rem;border-radius:4px}
+.ancestor em{color:#0ea5a4}
+
+footer{margin-top:2rem;text-align:center;color:#6b7280}

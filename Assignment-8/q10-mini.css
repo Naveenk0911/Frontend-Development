@@ -1,0 +1,18 @@
+/* Mini UI Layout CSS */
+/* Header, content card with form, and footer; responsive */
+*{box-sizing:border-box}
+body{font-family:system-ui;background:#f3f4f6;margin:0;padding:0;display:flex;flex-direction:column;min-height:100vh}
+.topbar{background:#111;color:#fff;padding:.8rem 1rem}
+.center{flex:1;display:flex;align-items:center;justify-content:center;padding:2rem}
+.card{width:100%;max-width:520px;background:#fff;padding:1.2rem;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06);display:flex;gap:1rem;align-items:flex-start}
+.thumb{width:120px;height:80px;object-fit:cover;border-radius:8px}
+.form{flex:1;display:flex;flex-direction:column;gap:.6rem}
+input{padding:.5rem;border-radius:8px;border:1px solid #e6e6e6}
+input:focus{outline:none;box-shadow:0 0 0 4px rgba(59,130,246,0.12)}
+.buttons{display:flex;gap:.5rem;justify-content:flex-end}
+.primary{background:#2563eb;color:#fff;padding:.5rem 1rem;border-radius:8px;border:none}
+.secondary{background:transparent;border:1px solid #cbd5e1;padding:.5rem 1rem;border-radius:8px}
+.foot{text-align:center;padding:1rem;color:#6b7280}
+
+/* Responsive */
+@media (max-width:700px){.card{flex-direction:column;align-items:center}.thumb{width:100%;height:160px}}

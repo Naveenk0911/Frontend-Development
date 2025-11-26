@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q1 - Pseudo-Classes Demo</title>
+  <link rel="stylesheet" href="q1-pseudo.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Pseudo-Classes Demo</h1>
+    <section class="examples">
+      <article class="example">
+        <h2><code>:hover</code> on link</h2>
+        <p><a href="#" class="link-hover">Hover me</a></p>
+        <p class="desc"><strong>:hover</strong> applies when the mouse pointer is over an element.</p>
+      </article>
+
+      <article class="example">
+        <h2><code>:focus</code> on button</h2>
+        <p><button class="btn-focus">Focus me (Tab)</button></p>
+        <p class="desc"><strong>:focus</strong> applies when element receives keyboard focus.</p>
+      </article>
+
+      <article class="example">
+        <h2><code>:active</code> on button</h2>
+        <p><button class="btn-active">Press and hold</button></p>
+        <p class="desc"><strong>:active</strong> applies while the element is being activated (pressed).</p>
+      </article>
+
+      <article class="example">
+        <h2><code>:nth-child()</code> on list</h2>
+        <ul class="demo-list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+        <p class="desc"><strong>:nth-child(odd)</strong> styles odd list items.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

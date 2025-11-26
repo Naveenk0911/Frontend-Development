@@ -1,0 +1,31 @@
+/* Pseudo-Classes Demo CSS */
+/* Shows :hover, :focus, :active, and :nth-child */
+:root{--accent:#3b82f6;--muted:#6b7280}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;padding:2rem;background:#f8fafc;color:#111}
+.container{max-width:1100px;margin:0 auto}
+h1{margin-bottom:1rem}
+.examples{display:flex;gap:1rem;flex-wrap:wrap;align-items:flex-start}
+.example{background:white;padding:1rem;border-radius:8px;box-shadow:0 4px 12px rgba(16,24,40,0.06);width:240px}
+.desc{color:var(--muted);font-size:0.9rem}
+
+/* :hover */
+.link-hover{display:inline-block;padding:0.4rem 0.6rem;border-radius:6px;text-decoration:none;border:2px solid transparent;transition:all .18s ease}
+.link-hover:hover{background:var(--accent);color:white;transform:translateY(-2px)}
+
+/* :focus */
+.btn-focus{padding:0.5rem 0.8rem;border-radius:6px;border:2px solid #e2e8f0;background:#fff}
+.btn-focus:focus{outline:none;box-shadow:0 0 0 4px rgba(59,130,246,0.18);transform:scale(1.02)}
+
+/* :active */
+.btn-active{padding:0.5rem 0.8rem;border-radius:6px;border:2px solid #cbd5e1;background:#fff}
+.btn-active:active{transform:translateY(2px) scale(.98);box-shadow:inset 0 2px 6px rgba(0,0,0,0.06)}
+
+/* :nth-child */
+.demo-list{list-style:none;padding:0;margin:0}
+.demo-list li{padding:0.5rem;border-radius:4px;margin:4px 0}
+.demo-list li:nth-child(odd){background:#eef2ff}
+.demo-list li:nth-child(even){background:#fff}
+
+/* responsive */
+@media (max-width:700px){.examples{flex-direction:column;align-items:stretch}.example{width:100%}}

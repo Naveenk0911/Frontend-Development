@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q4 - Selectors Practice</title>
+  <link rel="stylesheet" href="q4-selectors.css">
+</head>
+<body>
+  <header><h1>CSS Selectors Practice</h1></header>
+  <main class="wrap">
+    <section>
+      <h2>Element selector</h2>
+      <p>This paragraph is styled by element selector.</p>
+    </section>
+
+    <section>
+      <h2>Class selector</h2>
+      <p class="highlight">This uses a <code>.highlight</code> class.</p>
+    </section>
+
+    <section>
+      <h2>ID selector</h2>
+      <p id="unique">This paragraph uses an <code>#unique</code> ID.</p>
+    </section>
+
+    <section>
+      <h2>Attribute selector</h2>
+      <a href="#" data-type="special">Special link (attribute)</a>
+    </section>
+
+    <section>
+      <h2>Combinators</h2>
+      <div class="comb">
+        <p>Parent &gt; <span class="child">child</span></p>
+        <p>Sibling + <span class="adj">adjacent</span></p>
+        <p>General sibling ~ <span class="later">later</span></p>
+        <div class="ancestor">
+          <p>Descendant example: <em>descendant</em></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>Footer: practice your selectors</footer>
+</body>
+</html>
