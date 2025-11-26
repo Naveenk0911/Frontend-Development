@@ -1,0 +1,15 @@
+body {
+  font-family: 'Georgia', serif;
+  margin: 40px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+mark { background: yellow; color: black; }
+strong { color: #2196f3; }
+em { color: #e91e63; }
+p::first-line { font-weight: bold; }
+p::first-letter {
+  font-size: 2em;
+  color: #ff5722;
+}

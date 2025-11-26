@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  gap: 30px;
+}
+div {
+  background: #fff;
+  border: 5px solid #2196f3;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  box-sizing: content-box;
+}
+.border-box {
+  box-sizing: border-box;
+  background: #e0f7fa;
+}
