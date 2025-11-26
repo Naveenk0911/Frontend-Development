@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.team-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.team-lead {
+    background-color: #3498db;
+    color: white;
+    border: 3px solid #2980b9;
+}
+
+.team-lead h2,
+.team-lead h3,
+.team-lead p {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
